@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mondrian</title>
+
+    <style>
+      .main {
+        background-color: black;
+        display: grid;
+        padding: 30px;
+        gap: 15px;
+        grid-template-columns: 3fr 6fr 1fr;
+        grid-template-rows: 4fr 4fr 1fr 1fr;
+        width: 600px;
+        height: 600px;
+
+        grid-template-areas:
+          "   w3         red         red "
+          "   w4         red         red"
+          "   blue       w5          w6  "
+          "   blue       w5          yellow ";
+      }
+
+      #white {
+        background-color: white;
+      }
+      .w3 {
+        grid-area: w3;
+      }
+      .w4 {
+        grid-area: w4;
+      }
+      .w5 {
+        grid-area: w5;
+      }
+      .w6 {
+        grid-area: w6;
+      }
+      .red {
+        background-color: red;
+        grid-area: red;
+      }
+      .blue {
+        background-color: blue;
+        grid-area: blue;
+      }
+      .yellow {
+        background-color: yellow;
+        grid-area: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="w3" id="white"></div>
+      <div class="w4" id="white"></div>
+      <div class="red"></div>
+      <div class="w5" id="white"></div>
+      <div class="blue"></div>
+      <div class="w6" id="white"></div>
+      <div class="yellow"></div>
+    </div>
+  </body>
+</html>

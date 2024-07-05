@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>chessBoard</title>
+    <style>
+      .chessboard {
+        background-color: rgb(0, 0, 0);
+        display: grid;
+        min-width: 600px;
+        min-height: 600px;
+        margin: 40px;
+        padding: 30px;
+
+        grid-template-columns: repeat(8, 1fr);
+        grid-template-rows: repeat(8, 1fr);
+      }
+
+      #w4 {
+        background-color: rgb(145, 139, 139);
+      }
+
+      #b4 {
+        background-color: rgb(43, 3, 3);
+        color: bisque;
+      }
+
+      #w3 {
+        background-color: rgb(145, 139, 139);
+      }
+
+      #b3 {
+        background-color: rgb(43, 3, 3);
+        color: bisque;
+      }
+      #w1 {
+        background-color: rgb(145, 139, 139);
+      }
+
+      #b1 {
+        background-color: rgb(43, 3, 3);
+        color: bisque;
+      }
+
+      #w2 {
+        background-color: rgb(145, 139, 139);
+      }
+
+      #b2 {
+        background-color: rgb(43, 3, 3);
+        color: bisque;
+      }
+      #w5 {
+        background-color: rgb(145, 139, 139);
+      }
+
+      #b5 {
+        background-color: rgb(43, 3, 3);
+        color: bisque;
+      }
+
+      #w6 {
+        background-color: rgb(145, 139, 139);
+      }
+
+      #b6 {
+        background-color: rgb(43, 3, 3);
+        color: bisque;
+      }
+      #w7 {
+        background-color: rgb(145, 139, 139);
+      }
+
+      #b7 {
+        background-color: rgb(43, 3, 3);
+        color: bisque;
+      }
+
+      #w8 {
+        background-color: rgb(145, 139, 139);
+      }
+
+      #b8 {
+        background-color: rgb(43, 3, 3);
+        color: bisque;
+      }
+      #w9 {
+        background-color: rgb(145, 139, 139);
+      }
+
+      #b9 {
+        background-color: rgb(43, 3, 3);
+        color: bisque;
+      }
+
+      #w10 {
+        background-color: rgb(145, 139, 139);
+      }
+
+      #b10 {
+        background-color: rgb(43, 3, 3);
+        color: bisque;
+      }
+      #w11 {
+        background-color: rgb(145, 139, 139);
+      }
+
+      #b11 {
+        background-color: rgb(43, 3, 3);
+        color: bisque;
+      }
+
+      #w12 {
+        background-color: rgb(145, 139, 139);
+      }
+
+      #b12 {
+        background-color: rgb(43, 3, 3);
+        color: bisque;
+      }
+      #w13 {
+        background-color: rgb(145, 139, 139);
+      }
+
+      #b13 {
+        background-color: rgb(43, 3, 3);
+        color: bisque;
+      }
+
+      #w14 {
+        background-color: rgb(145, 139, 139);
+      }
+
+      #b14 {
+        background-color: rgb(43, 3, 3);
+        color: bisque;
+      }
+      #w15 {
+        background-color: rgb(145, 139, 139);
+      }
+
+      #b15 {
+        background-color: rgb(43, 3, 3);
+        color: bisque;
+      }
+
+      #w16 {
+        background-color: rgb(145, 139, 139);
+      }
+
+      #b16 {
+        background-color: rgb(43, 3, 3);
+        color: bisque;
+      }
+      #w17 {
+        background-color: rgb(145, 139, 139);
+      }
+
+      #b17 {
+        background-color: rgb(43, 3, 3);
+        color: bisque;
+      }
+
+      #w18 {
+        background-color: rgb(145, 139, 139);
+      }
+
+      #b18 {
+        background-color: rgb(43, 3, 3);
+        color: bisque;
+      }
+      #w19 {
+        background-color: rgb(145, 139, 139);
+      }
+
+      #b19 {
+        background-color: rgb(43, 3, 3);
+        color: bisque;
+      }
+
+      #w20 {
+        background-color: rgb(145, 139, 139);
+      }
+
+      #b20 {
+        background-color: rgb(43, 3, 3);
+        color: bisque;
+      }
+      #w21 {
+        background-color: rgb(145, 139, 139);
+      }
+
+      #b21 {
+        background-color: rgb(43, 3, 3);
+        color: bisque;
+      }
+
+      #w22 {
+        background-color: rgb(145, 139, 139);
+      }
+
+      #b22 {
+        background-color: rgb(43, 3, 3);
+        color: bisque;
+      }
+      #w23 {
+        background-color: rgb(145, 139, 139);
+      }
+
+      #b23 {
+        background-color: rgb(43, 3, 3);
+        color: bisque;
+      }
+
+      #w24 {
+        background-color: rgb(145, 139, 139);
+      }
+
+      #b24 {
+        background-color: rgb(43, 3, 3);
+        color: bisque;
+      }
+      #w25 {
+        background-color: rgb(145, 139, 139);
+      }
+
+      #b25 {
+        background-color: rgb(43, 3, 3);
+        color: bisque;
+      }
+
+      #w26 {
+        background-color: rgb(145, 139, 139);
+      }
+
+      #b26 {
+        background-color: rgb(43, 3, 3);
+        color: bisque;
+      }
+      #w27 {
+        background-color: rgb(145, 139, 139);
+      }
+
+      #b27 {
+        background-color: rgb(43, 3, 3);
+        color: bisque;
+      }
+
+      #w28 {
+        background-color: rgb(145, 139, 139);
+      }
+
+      #b28 {
+        background-color: rgb(43, 3, 3);
+        color: bisque;
+      }
+      #w29 {
+        background-color: rgb(145, 139, 139);
+      }
+
+      #b29 {
+        background-color: rgb(43, 3, 3);
+        color: bisque;
+      }
+
+      #w30 {
+        background-color: rgb(145, 139, 139);
+      }
+
+      #b30 {
+        background-color: rgb(43, 3, 3);
+        color: bisque;
+      }
+      #w31 {
+        background-color: rgb(145, 139, 139);
+      }
+
+      #b31 {
+        background-color: rgb(43, 3, 3);
+        color: bisque;
+      }
+
+      #w32 {
+        background-color: rgb(145, 139, 139);
+      }
+
+      #b32 {
+        background-color: rgb(43, 3, 3);
+        color: bisque;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="chessboard">
+      <div class="white" id="w4"></div>
+      <div class="brown" id="b4"></div>
+      <div class="white" id="w3"></div>
+      <div class="brown" id="b3"></div>
+      <div class="white" id="w1"></div>
+      <div class="brown" id="b1"></div>
+      <div class="white" id="w2"></div>
+      <div class="brown" id="b2"></div>
+      <div class="brown" id="b9"></div>
+      <div class="white" id="w9"></div>
+      <div class="brown" id="b10"></div>
+      <div class="white" id="w10"></div>
+      <div class="brown" id="b11"></div>
+      <div class="white" id="w11"></div>
+      <div class="brown" id="b12"></div>
+      <div class="white" id="w12"></div>
+
+      <div class="white" id="w5"></div>
+      <div class="brown" id="b5"></div>
+      <div class="white" id="w6"></div>
+      <div class="brown" id="b6"></div>
+      <div class="white" id="w7"></div>
+      <div class="brown" id="b7"></div>
+      <div class="white" id="w8"></div>
+      <div class="brown" id="b8"></div>
+
+      <div class="brown" id="b13"></div>
+      <div class="white" id="w13"></div>
+      <div class="brown" id="b14"></div>
+      <div class="white" id="w14"></div>
+      <div class="brown" id="b15"></div>
+      <div class="white" id="w15"></div>
+      <div class="brown" id="b16"></div>
+      <div class="white" id="w16"></div>
+
+      <div class="white" id="w17"></div>
+      <div class="brown" id="b17"></div>
+      <div class="white" id="w18"></div>
+      <div class="brown" id="b18"></div>
+      <div class="white" id="w19"></div>
+      <div class="brown" id="b19"></div>
+      <div class="white" id="w20"></div>
+      <div class="brown" id="b20"></div>
+      <div class="brown" id="b25"></div>
+      <div class="white" id="w25"></div>
+      <div class="brown" id="b26"></div>
+      <div class="white" id="w26"></div>
+      <div class="brown" id="b27"></div>
+      <div class="white" id="w27"></div>
+      <div class="brown" id="b28"></div>
+      <div class="white" id="w28"></div>
+
+      <div class="white" id="w21"></div>
+      <div class="brown" id="b21"></div>
+      <div class="white" id="w22"></div>
+      <div class="brown" id="b22"></div>
+      <div class="white" id="w23"></div>
+      <div class="brown" id="b23"></div>
+      <div class="white" id="w24"></div>
+      <div class="brown" id="b24"></div>
+
+      <div class="brown" id="b29"></div>
+      <div class="white" id="w29"></div>
+      <div class="brown" id="b30"></div>
+      <div class="white" id="w30"></div>
+      <div class="brown" id="b31"></div>
+      <div class="white" id="w31"></div>
+      <div class="brown" id="b32"></div>
+      <div class="white" id="w32"></div>
+    </div>
+  </body>
+</html>
